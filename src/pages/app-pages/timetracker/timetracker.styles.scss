@@ -1,0 +1,651 @@
+.tt-page {
+  background-color: #081631;
+  min-height: 100vh;
+  font-family: 'Nexa Light';
+
+  & > * {
+    font-family: 'Nexa Light';
+  }
+}
+
+.tt-input-section {
+  display: flex;
+  min-height: 4.2858rem;
+  align-items: center;
+  transition: all 0.2s;
+  border: 1px solid #000;
+  background: #484d53;
+}
+
+.add-images-container {
+  .add-images {
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.tt-add-btn {
+  cursor: pointer;
+  color: white;
+  padding: 8px 1rem;
+  background-color: #081631;
+}
+
+.auto-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 1fr 2fr 2fr 1fr 3fr 2fr 1fr;
+  & > * {
+    background: #484d53;
+    border: none;
+  }
+  align-items: center;
+  justify-items: center;
+
+  .tt-input {
+    height: 50px;
+    padding: 0px 1rem;
+    justify-self: start;
+    color: #fff !important;
+    width: 100%;
+
+    &:focus {
+      outline: 1px solid white;
+    }
+
+    &::placeholder {
+      color: rgb(255, 255, 255) !important;
+      font-family: 'Nexa Light';
+    }
+  }
+
+  .tt-project-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Nexa Bold';
+    cursor: pointer;
+    color: #fff;
+
+    & > .add-icon {
+      width: 15px;
+      height: 15px;
+      color: #fff;
+      fill: #fff;
+      margin-right: 4px;
+    }
+
+    &:focus {
+      outline: 0px solid rgba(255, 255, 255, 0.534);
+    }
+  }
+
+  .tt-categories-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Nexa Bold';
+    color: #fff;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0px solid rgba(255, 255, 255, 0.534);
+    }
+  }
+
+  .tt-billable {
+    width: 1.5rem;
+    cursor: pointer;
+    height: 1.5rem;
+  }
+
+  .tt-time-display {
+    color: #fff;
+  }
+
+  .action-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .action-icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    fill: #fff !important;
+  }
+
+  .action-stop {
+    margin-left: 1rem;
+  }
+
+  .tt-switch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+
+    img {
+      width: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.man-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10fr 1fr 2fr 2fr 1fr 2fr 2fr 2fr 3fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  & > * {
+    background: #484d53;
+    border: none;
+  }
+
+  .tt-add-btn {
+    cursor: pointer;
+    color: white;
+    padding: 8px 1rem;
+    background-color: #081631;
+  }
+
+  .tt-input {
+    height: 50px;
+    padding: 0px 1rem;
+    justify-self: start;
+    color: #fff;
+    width: 100%;
+    grid-column: span 3;
+
+    &:focus {
+      outline: 1px solid white;
+    }
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.527);
+      font-family: 'Nexa Light';
+    }
+  }
+
+  .tt-project-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Nexa Bold';
+    cursor: pointer;
+    color: #fff;
+    height: 100%;
+    grid-column: span 4;
+
+    & > .add-icon {
+      width: 15px;
+      height: 15px;
+      color: #fff;
+      fill: #fff;
+      margin-right: 4px;
+    }
+
+    &:focus {
+      outline: 0px solid rgba(255, 255, 255, 0.534);
+    }
+  }
+
+  // .add-images-container {
+  // }
+
+  .tt-categories-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Nexa Bold';
+    color: #fff;
+    cursor: pointer;
+    grid-column: span 2;
+
+    &:focus {
+      outline: 0px solid rgba(255, 255, 255, 0.534);
+    }
+  }
+
+  .tt-billable {
+    width: 1.5rem;
+    cursor: pointer;
+    height: 1.5rem;
+  }
+
+  .tt-input-time-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      &:focus {
+        outline: none;
+      }
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+
+  .tt-time-display {
+    width: 75px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .tt-datepicker {
+    width: 90%;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    grid-column: span 3;
+
+    div {
+      input {
+        color: white;
+        background-color: #484d53;
+        border: 1px solid #ffffffb6;
+        padding: 4px 8px;
+        width: 90%;
+        text-align: center;
+
+        &::placeholder {
+          color: #fff;
+          font-family: 'Nexa Bold';
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .break-input-container {
+    display: flex;
+    align-items: center;
+    grid-column: span 3;
+
+    span {
+      font-size: 12px;
+      color: #fff;
+      padding-right: 4px;
+    }
+    .break-input {
+      max-height: 23.31px;
+      min-width: 80px;
+      max-width: 80px;
+    }
+  }
+
+  .tt-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    grid-column: span 2;
+
+    img {
+      cursor: pointer;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+.timesheet {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  background: #58585f;
+}
+
+.ts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #fff;
+  padding: 0 1.25rem;
+
+  & > * {
+    color: #000;
+    font-family: 'Nexa Light';
+    transition: all 1s;
+  }
+}
+
+.ts-list {
+  border-bottom: 5px solid #fff;
+}
+
+.ts-entry {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 4.2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.472);
+  padding: 0 1rem;
+  color: #fff;
+
+  & > * {
+    min-height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+
+  .entry-title {
+    display: flex;
+    min-width: 40%;
+    justify-content: flex-start;
+    color: #fff;
+
+    p {
+      margin: 0;
+    }
+
+    .entry-tag {
+      font-family: 'Nexa Light';
+      margin-left: 1rem;
+      .round {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .entry-images {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .entry-categories {
+    img {
+      max-width: 1.8rem;
+      cursor: pointer;
+    }
+  }
+
+  .billable {
+    color: #fff;
+  }
+
+  .entry-timeline {
+    input {
+      background: #5a5a5f;
+      min-height: 2rem;
+      border: 0px;
+      transition: all 1s;
+      max-width: 80px;
+      text-align: center;
+
+      &:focus,
+      &:hover {
+        outline-color: white;
+        border: 1px solid white;
+      }
+    }
+
+    * {
+      color: #fff;
+    }
+  }
+
+  // span {
+  // }
+
+  .entry-date {
+    margin: 0;
+    p {
+      width: 6rem;
+      text-align: center;
+    }
+  }
+
+  // .entry-total-time {
+  // }
+
+  .entry-delete {
+    font-size: 2rem;
+    width: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 0.5rem;
+
+    // .entry-delete-icon {
+    // }
+  }
+
+  &:last-child {
+    border-bottom: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  // .tt-input-section {
+  // }
+
+  .man-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .tt-input {
+      grid-column: 1 / 9;
+      padding: 0px 0.5rem;
+    }
+
+    .tt-categories-btn {
+      grid-column: span 3;
+      height: 40px;
+    }
+
+    .tt-add-btn {
+      grid-column: span 2;
+    }
+
+    .tt-datepicker {
+      grid-column: span 2 / span 2;
+      display: flex;
+      align-items: center;
+      height: 40px;
+    }
+
+    .tt-switch {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  .auto-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .tt-input {
+      grid-column: 1 / 11;
+      padding: 0px 0.5rem;
+    }
+
+    .tt-project-btn {
+      grid-column: span 3;
+    }
+
+    .tt-categories-btn {
+      grid-column: span 5;
+      height: 40px;
+      padding: 0;
+    }
+
+    .action-buttons {
+      grid-column: span 3;
+    }
+
+    .tt-time-display {
+      grid-column: span 4;
+    }
+
+    .add-images-container {
+      grid-column: span 2;
+    }
+
+    .tt-switch {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      grid-column: span 2;
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .man-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .tt-input {
+      grid-column: 1 / 10;
+      padding: 0px 0.5rem;
+    }
+
+    .tt-categories-btn {
+      grid-column: span 3;
+    }
+
+    .tt-datepicker {
+      grid-column: span 5;
+    }
+
+    .add-images-container {
+      grid-column: span 2;
+    }
+
+    .tt-input-time-wrapper {
+      grid-column: span 5;
+    }
+
+    // .tt-billable {
+    // }
+
+    .tt-time-display {
+      grid-column: span 3;
+    }
+
+    .break-input-container {
+      grid-column: span 4;
+    }
+
+    .tt-add-btn {
+      grid-column: span 1;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    // .tt-switch {
+    // }
+  }
+
+  .ts-entry {
+    flex-wrap: wrap;
+    .entry-title {
+      min-width: 100%;
+    }
+
+    .entry-categories {
+      justify-content: flex-start;
+      min-width: 10%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .man-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .tt-input {
+      grid-column: span 10;
+      padding: 0px 0.5rem;
+    }
+
+    .tt-input-time-wrapper {
+      grid-column: span 6;
+    }
+
+    .tt-time-display {
+      grid-column: span 4;
+    }
+
+    .tt-datepicker {
+      grid-column: span 4;
+    }
+
+    .break-input-container {
+      grid-column: span 6;
+
+      .break-input {
+        min-width: 40px;
+        max-width: 40px;
+        padding: 2px 4px;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type='number'] {
+        -moz-appearance: textfield;
+      }
+    }
+
+    .tt-add-btn {
+      grid-column: span 6;
+      height: 30px;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+
+    .tt-switch {
+      grid-column: span 4;
+      padding-bottom: 8px;
+    }
+
+    .tt-datepicker {
+      .react-datepicker-wrapper {
+        max-width: 110px;
+        min-width: 108px;
+
+        .react-datepicker__input-container {
+          input {
+            min-width: 108px;
+            max-width: 110px;
+            padding: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .ts-entry {
+    flex-wrap: wrap;
+    .entry-title {
+      min-width: 100%;
+    }
+
+    .entry-categories {
+      justify-content: flex-start;
+      min-width: 10%;
+    }
+  }
+}

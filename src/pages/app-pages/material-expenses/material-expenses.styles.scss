@@ -1,0 +1,246 @@
+.material-exp-page {
+  .p-search-bar {
+    padding: 0 2rem;
+
+    input {
+      margin: 0;
+    }
+    .input-note {
+      min-width: 300px;
+    }
+
+    .input-price-unit {
+      min-width: 100px;
+
+      max-width: 100px;
+    }
+
+    .input-write-note {
+      min-width: 100px;
+
+      max-width: 100px;
+    }
+
+    .styled-select {
+      margin: 0;
+      min-width: 180px;
+    }
+
+    .app-btn-blue {
+      padding: 0.7rem 2rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  .list {
+    .list-sub-header {
+      display: flex;
+
+      justify-content: flex-start;
+      p {
+        text-align: left;
+      }
+
+      .name {
+        width: 55%;
+      }
+
+      .quantity {
+        width: 10%;
+      }
+
+      .ppu {
+        width: 15%;
+      }
+
+      .total {
+        width: 10%;
+      }
+    }
+    .operational-exp-entry {
+      justify-content: flex-start;
+
+      max-height: 50px;
+      p {
+        margin: 0;
+        text-align: left;
+        height: 10%;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .name {
+        width: 55%;
+      }
+      .quantity {
+        width: 10%;
+      }
+      .ppu {
+        width: 15%;
+      }
+      .total {
+        width: 10%;
+      }
+
+      .dlt {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 10%;
+
+        svg {
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.d-992 {
+  display: none;
+}
+
+.d-none-992 {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .d-992 {
+    display: inline;
+  }
+
+  .d-none-992 {
+    display: none !important;
+  }
+
+  .material-exp-page {
+    .p-search-bar {
+      padding: 0 8px;
+
+      .input-note {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      .input-price-unit {
+        margin-bottom: 8px;
+        max-width: 120px;
+      }
+
+      .input-write-note {
+        margin-bottom: 8px;
+        max-width: 120px;
+      }
+
+      .styled-select {
+        margin: 0;
+        margin-bottom: 8px;
+      }
+
+      .app-btn-blue {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-bottom: 8px;
+        width: 100%;
+      }
+    }
+
+    .list {
+      .operational-exp-entry {
+        max-height: 500px;
+        border-bottom: 3px solid rgb(177, 177, 177);
+        p {
+          margin: 0;
+          text-align: left;
+          height: 10%;
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .name {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          border-bottom: 1px solid #aaa;
+        }
+
+        .quantity {
+          width: 50%;
+          display: flex;
+          justify-content: flex-start;
+          border-bottom: 1px solid #aaa;
+        }
+
+        .ppu {
+          width: 50%;
+          display: flex;
+          justify-content: flex-end;
+          font-size: 0.9rem;
+          border-bottom: 1px solid #aaa;
+        }
+
+        .total {
+          display: flex;
+          justify-content: flex-start;
+          width: 90%;
+        }
+
+        .dlt {
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .material-exp-page {
+    .input-price-unit,
+    .input-write-note {
+      min-width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .material-exp-page {
+    .p-search-bar {
+      .input-note {
+        min-width: 200px;
+      }
+    }
+    .app-page-name-section {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .page-h1 {
+        margin-bottom: 1rem;
+      }
+
+      .app-btn-white {
+        width: 80%;
+      }
+    }
+
+    .list {
+      .operating-exp-entry {
+        .name {
+          background: red;
+        }
+      }
+    }
+  }
+}

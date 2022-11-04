@@ -1,0 +1,731 @@
+.ca-tt-page {
+  background-color: #081631;
+  min-height: 100vh;
+  font-family: 'Nexa Light';
+
+  & > * {
+    font-family: 'Nexa Light';
+  }
+}
+
+.ca-tt-input-section {
+  display: flex;
+  min-height: 4.2858rem;
+  align-items: center;
+  transition: all 0.2s;
+  border: 1px solid #000;
+  background: #484d53;
+}
+
+.ca-add-exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  color: #fff;
+
+  svg {
+    font-size: 1.2rem;
+  }
+  span {
+    margin-top: 3px;
+  }
+}
+
+.add-images {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  color: white;
+  cursor: pointer;
+}
+
+.ca-auto-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  * {
+    color: #fff;
+  }
+
+  & > * {
+    background: #484d53;
+    border: none;
+  }
+  align-items: center;
+  justify-items: center;
+
+  .ca-tt-input {
+    height: 50px;
+    padding: 0px 1rem;
+    justify-self: start;
+    color: #fff !important;
+    width: 100%;
+    grid-column: span 8;
+
+    &:focus {
+      outline: 1px solid white;
+    }
+
+    &::placeholder {
+      color: rgb(255, 255, 255) !important;
+      font-family: 'Nexa Light';
+    }
+  }
+
+  .ca-tt-project-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Nexa Bold';
+    color: #fff;
+    cursor: pointer;
+
+    & > .add-icon {
+      width: 15px;
+      height: 15px;
+      color: #fff;
+      fill: #fff;
+      margin-right: 4px;
+    }
+
+    &:focus {
+      outline: 0px solid rgba(255, 255, 255, 0.534);
+    }
+  }
+
+  .ca-tt-categories-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Nexa Bold';
+    color: #fff;
+    grid-column: span 2;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0px solid rgba(255, 255, 255, 0.534);
+    }
+  }
+
+  .material-exp,
+  .operational-exp {
+    grid-column: span 3;
+  }
+
+  .ca-tt-billable {
+    width: 1.5rem;
+    cursor: pointer;
+    height: 1.5rem;
+  }
+
+  // .ca-tt-time-display {
+  // }
+
+  .action-buttons {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+  }
+
+  .action-icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    fill: #fff !important;
+  }
+
+  .action-stop {
+    margin-left: 1rem;
+  }
+
+  .ca-tt-switch {
+    display: flex;
+    justify-content: space-around;
+    min-width: 100px;
+
+    img {
+      width: 1.7rem;
+      height: 1.7rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 576px) {
+      min-width: 70px;
+    }
+  }
+}
+
+.ca-man-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  justify-items: center;
+
+  & > * {
+    background: #484d53;
+    border: none;
+  }
+
+  .ca-tt-input {
+    height: 50px;
+    padding: 0px 1rem;
+    justify-self: start;
+    color: #fff;
+    width: 100%;
+    grid-column: span 4;
+
+    &:focus {
+      outline: 1px solid white;
+    }
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.527);
+      font-family: 'Nexa Light';
+    }
+  }
+
+  .ca-tt-project-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Nexa Bold';
+    color: #fff;
+    height: 100%;
+    cursor: pointer;
+
+    & > .add-icon {
+      width: 15px;
+      height: 15px;
+      color: #fff;
+      fill: #fff;
+      margin-right: 4px;
+    }
+
+    &:focus {
+      outline: 0px solid rgba(255, 255, 255, 0.534);
+    }
+  }
+
+  // .add-images-container {
+  // }
+
+  .ca-tt-categories-btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Nexa Bold';
+    color: #fff;
+    grid-column: span 2;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0px solid rgba(255, 255, 255, 0.534);
+    }
+  }
+
+  .material-exp,
+  .operational-exp {
+    grid-column: span 2;
+  }
+
+  .ca-tt-billable {
+    width: 1.5rem;
+    cursor: pointer;
+    height: 1.5rem;
+  }
+
+  .ca-tt-input-time-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 3;
+
+    input {
+      &:focus {
+        outline: none;
+      }
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+
+  .ca-tt-time-display {
+    width: 75px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .ca-tt-datepicker {
+    color: #000 !important;
+    width: 90%;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      input {
+        color: white;
+        background-color: #484d53;
+        border: 1px solid #ffffffb6;
+        padding: 4px 8px;
+        width: 90%;
+        text-align: center;
+
+        &::placeholder {
+          color: #fff;
+          font-family: 'Nexa Bold';
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .action-icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    fill: #fff !important;
+  }
+
+  .break-input-container {
+    display: flex;
+    align-items: center;
+    grid-column: span 2;
+
+    span {
+      font-size: 12px;
+      color: #fff;
+      padding-right: 4px;
+    }
+    .break-input {
+      max-height: 23.31px;
+      // min-width: 80px;
+      // max-width: 80px;
+      min-width: 40px;
+      max-width: 40px;
+      padding: 2px 4px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type='number'] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  .ca-tt-switch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100px;
+    min-height: 50px;
+    grid-column: span 2;
+
+    img {
+      width: 1.7rem;
+      height: 1.7rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.timesheet {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  background: #58585f;
+}
+
+.ca-ts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #fff;
+  padding: 0 1.25rem;
+
+  & > * {
+    color: #000;
+    font-family: 'Nexa Light';
+    transition: all 1s;
+  }
+}
+
+.ca-ts-list {
+  border-bottom: 5px solid #fff;
+}
+
+.see-exp {
+  min-width: 250px;
+
+  span,
+  svg {
+    cursor: pointer;
+  }
+}
+
+.ca-ts-entry {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 4.2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.472);
+  padding: 0 1rem;
+  flex-wrap: wrap;
+
+  * {
+    color: #fff;
+  }
+
+  & > * {
+    min-height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+
+  .entry-title {
+    display: flex;
+    min-width: 40%;
+    justify-content: flex-start;
+
+    p {
+      margin: 0;
+    }
+
+    .entry-tag {
+      font-family: 'Nexa Light';
+      margin-left: 1rem;
+      .round {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .entry-images {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .entry-categories {
+    img {
+      max-width: 1.8rem;
+      cursor: pointer;
+    }
+  }
+
+  // .billable {
+  // }
+
+  .entry-timeline {
+    input {
+      background: #5a5a5f;
+      min-height: 2rem;
+      border: 0px;
+      transition: all 1s;
+      max-width: 80px;
+      text-align: center;
+
+      &:focus,
+      &:hover {
+        outline-color: white;
+        border: 1px solid white;
+      }
+    }
+  }
+
+  // span {
+  // }
+
+  .entry-date {
+    margin: 0;
+    p {
+      width: 6rem;
+      text-align: center;
+    }
+  }
+
+  // .entry-total-time {
+  // }
+
+  .entry-delete {
+    font-size: 2rem;
+    width: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 0.5rem;
+
+    // .entry-delete-icon {
+    // }
+  }
+
+  &:last-child {
+    border-bottom: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  // .ca-tt-input-section {
+  // }
+
+  .ca-man-grid {
+    grid-template-columns: repeat(10, 1fr);
+
+    .ca-tt-input {
+      grid-column: 1 / 9;
+      padding: 0px 0.5rem;
+    }
+
+    .ca-tt-categories-btn {
+      grid-column: span 5;
+      height: 40px;
+    }
+
+    .ca-tt-datepicker {
+      grid-column: span 2 / span 2;
+      height: 40px;
+    }
+
+    .ca-tt-switch {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      grid-column: span 1;
+    }
+  }
+
+  .ca-auto-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .ca-tt-input {
+      grid-column: 1 / 11;
+      padding: 0px 0.5rem;
+    }
+
+    .ca-tt-project-btn {
+      grid-column: span 3;
+    }
+
+    .ca-tt-categories-btn {
+      grid-column: span 5;
+      height: 40px;
+      padding: 0;
+    }
+
+    .material-exp,
+    .operational-exp {
+      grid-column: span 5;
+      min-height: 50px;
+    }
+
+    .action-buttons {
+      grid-column: span 3;
+    }
+
+    .ca-tt-time-display {
+      grid-column: span 4;
+    }
+
+    .add-images-container {
+      grid-column: span 2;
+    }
+
+    .ca-tt-switch {
+      flex-direction: row;
+
+      grid-column: span 2;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ca-man-grid {
+    grid-template-columns: repeat(12, 1fr);
+
+    .ca-tt-input {
+      grid-column: span 6;
+      padding: 0px 0.5rem;
+    }
+
+    .ca-tt-project-btn {
+      grid-column: span 2;
+    }
+
+    .ca-tt-categories-btn {
+      grid-column: span 2;
+    }
+
+    .material-exp {
+      grid-column: span 4;
+    }
+
+    .operational-exp {
+      grid-column: span 3;
+    }
+
+    .ca-tt-datepicker {
+      grid-column: span 4;
+    }
+
+    .add-images-container {
+      grid-column: span 1;
+    }
+
+    .ca-tt-input-time-wrapper {
+      grid-column: span 4;
+    }
+
+    .break-input-container {
+      grid-column: span 4;
+    }
+
+    // .ca-tt-billable {
+    // }
+
+    .ca-tt-time-display {
+      grid-column: span 2;
+    }
+
+    .ca-tt-add-btn {
+      grid-column: span 1;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    // .ca-tt-switch {
+    // }
+  }
+
+  .ca-ts-entry {
+    flex-wrap: wrap;
+    .entry-title {
+      min-width: 100%;
+    }
+
+    .entry-categories {
+      justify-content: flex-start;
+      min-width: 10%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .see-exp {
+    min-width: 100px;
+  }
+
+  .ca-man-grid {
+    grid-template-columns: repeat(10, 1fr);
+
+    .ca-tt-input {
+      grid-column: span 10;
+      padding: 0px 0.5rem;
+    }
+
+    .ca-tt-project-btn {
+      grid-column: span 4;
+    }
+
+    .add-images-container {
+      grid-column: span 3;
+    }
+
+    .ca-tt-categories-btn {
+      grid-column: span 3;
+    }
+
+    .material-exp {
+      grid-column: span 6 !important;
+      min-height: 40px;
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    .operational-exp {
+      grid-column: span 4;
+      min-height: 40px;
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    .material-exp {
+      grid-column: span 5;
+    }
+
+    .tt-billable {
+      grid-column: span 2;
+      font-size: 1.5rem;
+    }
+
+    .ca-tt-billable {
+      grid-column: span 2;
+      font-size: 1.5rem;
+    }
+
+    .ca-tt-input-time-wrapper {
+      grid-column: span 8;
+      min-height: 40px;
+    }
+    .ca-tt-datepicker {
+      grid-column: span 5;
+      .react-datepicker-wrapper {
+        max-width: 110px;
+        min-width: 108px;
+
+        .react-datepicker__input-container {
+          input {
+            min-width: 108px;
+            max-width: 110px;
+            padding: 4px;
+          }
+        }
+      }
+    }
+
+    .ca-tt-time-display {
+      grid-column: span 4;
+    }
+
+    .ca-tt-add-btn {
+      grid-column: span 4;
+      min-height: 40px;
+    }
+
+    .break-input-container {
+      grid-column: span 5;
+    }
+
+    // .ca-tt-switch {
+    //   img {
+    //     // margin-left: 5px;
+    //   }
+    // }
+  }
+
+  .ca-ts-entry {
+    flex-wrap: wrap;
+    .entry-title {
+      min-width: 100%;
+    }
+
+    .entry-categories {
+      justify-content: flex-start;
+      min-width: 10%;
+    }
+  }
+}

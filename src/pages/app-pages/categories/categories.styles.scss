@@ -1,0 +1,27 @@
+.categories-add-bar {
+  min-height: 4.2858rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+  border: 1px solid #000;
+  background: #484d53;
+  padding: 0rem 0.5rem;
+
+  input {
+    padding: 15px 0px 15px 8px;
+  }
+
+  button {
+    margin-right: 1rem;
+  }
+}
+
+.categories-page {
+  .list-entry {
+    svg {
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+  }
+}

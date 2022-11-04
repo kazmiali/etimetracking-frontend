@@ -1,0 +1,58 @@
+.add-me-modal {
+  width: 95% !important;
+
+  .m-body {
+    max-height: 70vh;
+    min-height: 70vh;
+    overflow-y: scroll;
+    padding: 0 20px;
+  }
+
+  .list {
+    margin-top: 0;
+  }
+}
+
+.m-body-ame {
+  .list-sub-header {
+    display: flex;
+    justify-content: flex-start !important;
+    .name {
+      width: 55%;
+    }
+    .quantity {
+      width: 15%;
+    }
+    .ppu {
+      width: 15%;
+    }
+    .total {
+      width: 15%;
+    }
+  }
+
+  .list-entry {
+    justify-content: flex-start !important;
+
+    & > * {
+      justify-content: flex-start !important;
+    }
+
+    .name {
+      width: 55%;
+    }
+    .quantity {
+      width: 15%;
+    }
+    .ppu {
+      width: 15%;
+    }
+    .total {
+      width: 15%;
+    }
+
+    .dlt {
+      display: none;
+    }
+  }
+}

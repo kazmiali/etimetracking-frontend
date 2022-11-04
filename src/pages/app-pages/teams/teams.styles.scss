@@ -1,0 +1,238 @@
+.team-page {
+  .d-none {
+    display: none;
+  }
+
+  .app-page-name-section {
+    .page-h1 {
+      padding-top: 8px;
+    }
+  }
+
+  .p-search-bar {
+    padding: 0 2rem;
+    .filter-bar {
+      justify-content: flex-start !important;
+      min-width: 60%;
+
+      .styled-select {
+        width: 220px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .filter-bar-2 {
+      display: flex;
+      justify-content: flex-end;
+      min-width: 40% !important;
+
+      button {
+        margin-right: 2rem;
+      }
+
+      .styled-select {
+        margin-right: 0;
+        width: 220px;
+      }
+    }
+  }
+
+  .member-entry {
+    .entry-dropdown-btn {
+      span {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background: #081631;
+        color: #fff;
+      }
+    }
+  }
+
+  .list {
+    .member-entry {
+      .member-details {
+        display: flex;
+        flex-direction: column;
+        background-color: #e2e2e2;
+        width: 100%;
+        padding: 0;
+        min-height: auto;
+        margin: 0px 0 20px 0;
+
+        .row {
+          display: flex;
+
+          width: 100%;
+          color: #000;
+          border-bottom: 1px solid #081631;
+
+          .property {
+            width: 50%;
+            border-right: 1px solid rgb(153, 153, 153);
+            p {
+              color: #000;
+              padding: 10px;
+              margin: 0;
+            }
+          }
+
+          .value {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              padding: 0 10px;
+
+              svg {
+                font-size: 1.5rem;
+              }
+            }
+
+            .change-role {
+              background: #081631;
+              padding: 2px;
+              height: 1.5rem;
+            }
+
+            p {
+              color: #000;
+              margin: 0;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .entry-dropdown-btn {
+    padding: 0;
+    cursor: pointer;
+    span {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      background: #081631;
+      color: #fff;
+    }
+  }
+}
+
+.team-modal {
+  .m-body {
+    display: flex;
+    justify-content: center;
+    input {
+      margin: 20px 0;
+      width: 90%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .team-page {
+    .p-search-bar {
+      .search-bar {
+        input {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team-page {
+    .p-search-bar {
+      flex-direction: column;
+      align-items: center;
+
+      .search-bar {
+        // padding: ;
+        min-width: 100%;
+
+        input {
+          margin: 0;
+          margin-top: 12px;
+        }
+        button {
+          margin-bottom: 12px;
+        }
+      }
+
+      .styled-select {
+        margin: 0;
+      }
+    }
+
+    .p-search-bar {
+      padding: 0 12px 12px 12px !important;
+      flex-direction: column;
+      .filter-bar {
+        min-width: 100% !important;
+        justify-content: flex-start !important;
+      }
+
+      .csv-link {
+        color: white;
+      }
+
+      .filter-bar-2 {
+        margin-top: 1rem;
+
+        min-width: 100% !important;
+        flex-direction: row;
+        justify-content: space-around !important;
+        align-items: center;
+
+        button {
+          margin-right: 0 !important;
+          margin-top: 12px;
+        }
+
+        .styled-select {
+          margin-right: 0;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 356px) {
+  .p-search-bar {
+    padding: 0 12px 12px 12px !important;
+    flex-direction: column;
+    .filter-bar {
+      min-width: 100% !important;
+      justify-content: flex-start !important;
+    }
+
+    .filter-bar-2 {
+      min-width: 100% !important;
+      flex-direction: column;
+
+      button {
+        margin-right: 0 !important;
+        margin-top: 12px;
+      }
+
+      .styled-select {
+        margin-right: 0;
+      }
+    }
+  }
+}

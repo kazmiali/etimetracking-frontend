@@ -1,0 +1,286 @@
+.subscription-page {
+  * {
+    color: #fff;
+  }
+
+  .subscription-price {
+    background-color: #4f5257 !important;
+    min-height: 95vh;
+  }
+
+  .price-section {
+    min-height: 90vh;
+  }
+
+  .mobile-dollar-section {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+
+    .dollar-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 60%;
+      min-width: 60%;
+
+      .one {
+        height: 100px;
+        width: 50px;
+        margin-right: 2rem;
+      }
+
+      .price-showcase-list {
+        margin-left: 0rem;
+      }
+
+      .dollar-sign {
+        align-self: center;
+        margin: 0 2rem 0 0;
+      }
+    }
+
+    .mobile-section {
+      max-width: 40%;
+      min-width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .content {
+        color: white;
+        background: white;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.iphonex {
+  min-width: 19rem;
+  max-width: 19rem;
+  min-height: 37.5rem;
+  border: 12px solid black;
+  border-radius: 31.25px;
+  box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33),
+    0 0 0 0.5px #000 inset;
+  background: #081631;
+
+  .m-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 16px;
+    height: 100%;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      font-size: 27px;
+    }
+
+    p {
+      margin-top: 5rem;
+      font-size: 20px;
+      font-family: 'Nexa Light';
+    }
+
+    .input {
+      text-align: center;
+      margin-left: 0;
+    }
+
+    span {
+      margin-top: 5rem;
+      font-family: 'Nexa Light';
+      font-size: 20px;
+    }
+
+    .payment-value {
+      margin-top: 3rem;
+      font-size: 4rem;
+      max-width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+.payment-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .page-h1 {
+    text-align: center;
+  }
+
+  .lead {
+    text-align: center;
+    font-family: 'Nexa Light';
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 3rem;
+  }
+
+  .FAQ-payment-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .FAQ {
+    max-width: 49%;
+    min-width: 49%;
+    background-color: #162749;
+    border-radius: 20px;
+    padding: 35px 30px;
+    min-height: 450px;
+
+    h3 {
+      font-size: 1.8rem;
+      font-family: 'Nexa Light';
+      margin: 0 0 2rem 0;
+    }
+
+    .q {
+      font-size: 18px;
+    }
+
+    .a {
+      margin: 0 0 2rem 0;
+      font-family: 'Nexa Light';
+    }
+  }
+
+  .payment-area {
+    border-radius: 20px;
+    max-width: 49%;
+    min-width: 49%;
+    background-color: #283b60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 16px;
+    min-height: 450px;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      font-size: 27px;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 20px;
+      font-family: 'Nexa Light';
+    }
+
+    .input {
+      text-align: center;
+      margin-left: 0;
+      background: #162749;
+    }
+
+    .payment-text {
+      margin-top: 3rem;
+      font-family: 'Nexa Light';
+      font-size: 20px;
+    }
+
+    .payment-value {
+      margin-top: 1.5rem;
+      font-size: 4rem;
+      font-family: 'Nexa Light';
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .subscription-page {
+    .container {
+      width: 90%;
+      margin: 0rem auto;
+      .mobile-dollar-section {
+        .dollar-section {
+          img {
+            margin-right: 1rem;
+          }
+
+          .price-showcase-list {
+            h2 {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .iphonex {
+      margin: 0;
+    }
+
+    .FAQ-payment-wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .FAQ,
+      .payment-area {
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .page-h1 {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription-page {
+    .container {
+      .mobile-dollar-section {
+        flex-direction: column;
+        .dollar-section {
+          max-width: 100%;
+          min-width: 100%;
+          margin: 1.5rem 0;
+        }
+        .mobile-section {
+          max-width: 100%;
+          min-width: 100%;
+          margin: 0 0 1.5rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .subscription-page {
+    .container {
+      width: 90%;
+      margin: 0rem auto;
+      .mobile-dollar-section {
+        .dollar-section {
+          img {
+            margin-right: 0.5rem;
+            width: 25px;
+            height: 50px;
+            align-self: flex-start;
+          }
+
+          .price-showcase-list {
+            h2 {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

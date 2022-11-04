@@ -1,0 +1,203 @@
+.operating-exp-page {
+  .p-search-bar {
+    padding: 0 1rem;
+
+    input {
+      margin: 0;
+    }
+    .input-note {
+      min-width: 250px !important;
+    }
+
+    .input-price-unit {
+      min-width: 100px;
+
+      max-width: 100px;
+    }
+
+    .input-write-note {
+      min-width: 100px;
+      max-width: 100px;
+    }
+
+    .styled-select {
+      margin: 0;
+      min-width: 180px;
+    }
+  }
+
+  .list {
+    .list-sub-header {
+      display: flex;
+      justify-content: flex-start !important;
+      p {
+        text-align: left;
+      }
+
+      .amount {
+        width: 10%;
+      }
+
+      .exp-type {
+        width: 15%;
+      }
+
+      .note {
+        width: 65%;
+      }
+    }
+    .operational-exp-entry {
+      justify-content: flex-start !important;
+
+      max-height: 50px;
+      p {
+        margin: 0;
+        text-align: left;
+        height: 10%;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .amount {
+        word-break: break-word;
+        width: 10%;
+      }
+
+      .exp-type {
+        width: 15%;
+      }
+
+      .note {
+        width: 65%;
+      }
+
+      .dlt {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 10%;
+        svg {
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.d-992 {
+  display: none;
+}
+
+.d-none-992 {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .d-992 {
+    display: inline;
+  }
+
+  .d-none-992 {
+    display: none !important;
+  }
+
+  .operating-exp-page {
+    .p-search-bar {
+      padding: 0 8px;
+
+      .input-note {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      .input-price-unit {
+        margin-bottom: 8px;
+        max-width: 120px;
+      }
+
+      .input-write-note {
+        margin-bottom: 8px;
+        max-width: 120px !important;
+      }
+
+      .styled-select {
+        margin: 0;
+        margin-bottom: 8px;
+      }
+
+      .app-btn-blue {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-bottom: 8px;
+        width: 100%;
+      }
+    }
+
+    .list {
+      .operational-exp-entry {
+        max-height: 500px;
+        p {
+          margin: 0;
+          text-align: left;
+          height: 10%;
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .amount {
+          width: 50%;
+        }
+
+        .exp-type {
+          width: 50%;
+        }
+
+        .note {
+          width: 90%;
+        }
+
+        .dlt {
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .operating-exp-page {
+    .input-price-unit {
+      min-width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .operating-exp-page {
+    .app-page-name-section {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .page-h1 {
+        margin-bottom: 1rem;
+      }
+
+      .app-btn-white {
+        width: 80%;
+      }
+    }
+  }
+}

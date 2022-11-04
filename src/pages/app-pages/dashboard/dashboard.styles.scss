@@ -1,0 +1,53 @@
+#chart {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.dashboard-page {
+  .app-page-name-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .react-datepicker-popper {
+      left: -150px !important;
+    }
+
+    .react-datepicker-wrapper {
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+
+    .time-range-container {
+      display: flex;
+      span {
+        color: #fff;
+        margin-right: 8px;
+      }
+
+      input {
+        background-color: #484d53;
+        border: 1px solid white;
+        border-radius: 2px;
+        color: white;
+        width: 100px;
+        margin-right: 8px;
+      }
+    }
+
+    .react-datepicker-wrapper {
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .time-range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

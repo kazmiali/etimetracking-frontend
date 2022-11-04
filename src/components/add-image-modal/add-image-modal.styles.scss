@@ -1,0 +1,95 @@
+.add-image-modal {
+  .m-body {
+    padding: 0 1rem;
+
+    .ai-h2 {
+      color: #fff;
+      margin: 0;
+      padding-top: 1rem;
+      font-size: 1rem;
+    }
+
+    .lead {
+      font-family: 'Nexa Light';
+      padding-bottom: 8px;
+    }
+    .images-showcase {
+      display: flex;
+      padding: 1rem 0;
+
+      .image-wrapper {
+        max-width: 100px;
+        max-height: 100px;
+        position: relative;
+        margin-left: 1rem;
+
+        &:first-child {
+          margin-left: 0rem;
+        }
+
+        .image-div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 100px;
+          min-height: 100px;
+          background: #000;
+
+          img {
+            max-width: 100px;
+            max-height: 100px;
+            transition: all 0.3s;
+
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+
+        button {
+          width: 1rem;
+          max-height: 1rem;
+          padding: 0;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+
+          left: 80px;
+          position: absolute;
+          top: 1px;
+
+          svg {
+            fill: grey;
+            font-size: 1.1rem;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .image-input-section {
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin-bottom: 1rem;
+        padding-bottom: 2.3rem;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          margin-bottom: 4px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}

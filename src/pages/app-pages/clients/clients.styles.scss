@@ -1,0 +1,138 @@
+.clients-page {
+  .p-search-bar {
+    .search-bar {
+      width: 100%;
+
+      button {
+        margin-right: 1rem;
+      }
+    }
+  }
+  .d-none {
+    display: none;
+  }
+
+  .list-header {
+    .list-sub-header-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 100%;
+
+      svg {
+        fill: #000;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .member-entry {
+    .entry-dropdown-btn {
+      span {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background: #081631;
+        color: #fff;
+      }
+    }
+  }
+
+  .list {
+    .member-entry {
+      .member-details {
+        display: flex;
+        flex-direction: column;
+        background-color: #e2e2e2;
+        width: 100%;
+        padding: 0;
+        min-height: auto;
+        margin: 0px 0 20px 0;
+
+        .row {
+          display: flex;
+
+          width: 100%;
+          color: #000;
+          border-bottom: 1px solid #081631;
+
+          .property {
+            width: 50%;
+            border-right: 1px solid rgb(153, 153, 153);
+            p {
+              color: #000;
+              padding: 10px;
+              margin: 0;
+            }
+          }
+
+          .value {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            button {
+              padding: 0 10px;
+
+              svg {
+                font-size: 1.5rem;
+              }
+            }
+
+            p {
+              color: #000;
+              margin: 0;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .entry-dropdown-btn {
+    padding: 0;
+    cursor: pointer;
+    span {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      background: #081631;
+      color: #fff;
+    }
+  }
+}
+
+.team-modal {
+  .m-body {
+    display: flex;
+    justify-content: center;
+    input {
+      margin: 20px 0;
+      width: 90%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .clients-page {
+    .p-search-bar {
+      .search-bar {
+        input {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

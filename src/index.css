@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nexa Bold';
+}
+
+@font-face {
+  font-family: 'Nexa Light';
+  src: url('./assets/fonts/NexaBold/Nexa\ Light.otf');
+  src: local('Nexa Light'), local('Nexa-Light'),
+    url('./assets/fonts/NexaBold/Nexa\ Light.otf') format('opentype');
+}
+/*bold version*/
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url('./assets/fonts/NexaBold/Nexa\ Bold.otf');
+  src: local('Nexa Bold'), local('Nexa-Bold'),
+    url('./assets/fonts/NexaBold/Nexa\ Bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+html,
+body {
+  font-family: 'Nexa Bold', 'Nexa Light', 'Roboto', 'Segoe UI',
+    'Oxygen', 'Ubuntu';
+  padding: 0px !important;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #081631;
+}
+
+a {
+  text-decoration: none;
+}

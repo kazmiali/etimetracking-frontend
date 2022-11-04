@@ -1,0 +1,59 @@
+$dark-blue: #081631;
+$grey: #58585a;
+$grey-dark: #525254;
+
+// .projects-page {
+//   // padding-top: 20px !important;
+// }
+
+.MuiMenu-list {
+  background: #484d53 !important;
+}
+
+.project-entry {
+  .entry-title {
+    .entry-tag {
+      font-family: 'Nexa Light';
+      margin-left: 1rem;
+      .round {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .entry-status {
+    span {
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 70px 8px 40px 8px !important;
+
+    .p-search-bar {
+      .search-bar {
+        input {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .project-entry {
+    .entry-title {
+      order: -1;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

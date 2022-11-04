@@ -1,0 +1,132 @@
+.report-page {
+  .csv-link {
+    color: white;
+  }
+
+  .react-datepicker-popper {
+    left: -150px !important;
+  }
+
+  .app-page-name-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .time-range-container {
+      span {
+        color: #fff;
+        margin-right: 8px;
+      }
+
+      input {
+        background-color: #484d53;
+        border: 1px solid white;
+        border-radius: 2px;
+        color: white;
+        width: 100px;
+        margin-right: 8px;
+      }
+    }
+
+    .react-datepicker-wrapper {
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .p-search-bar {
+    padding: 0 2rem;
+    .filter-bar {
+      justify-content: flex-start !important;
+      min-width: 60%;
+
+      .styled-select {
+        width: 220px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .filter-bar-2 {
+      display: flex;
+      justify-content: flex-end;
+      min-width: 40%;
+
+      button {
+        margin-right: 2rem;
+      }
+
+      .styled-select {
+        margin-right: 0;
+        width: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .time-range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-search-bar {
+    padding: 0 12px 12px 12px !important;
+    flex-direction: column;
+    .filter-bar {
+      min-width: 100% !important;
+      justify-content: flex-start !important;
+    }
+
+    .csv-link {
+      color: white;
+    }
+
+    .filter-bar-2 {
+      margin-top: 1rem;
+
+      min-width: 100% !important;
+      flex-direction: row;
+      justify-content: space-around !important;
+      align-items: center;
+
+      button {
+        margin-right: 0 !important;
+        margin-top: 12px;
+      }
+
+      .styled-select {
+        margin-right: 0;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 356px) {
+  .p-search-bar {
+    padding: 0 12px 12px 12px !important;
+    flex-direction: column;
+    .filter-bar {
+      min-width: 100% !important;
+      justify-content: flex-start !important;
+    }
+
+    .filter-bar-2 {
+      min-width: 100% !important;
+      flex-direction: column;
+
+      button {
+        margin-right: 0 !important;
+        margin-top: 12px;
+      }
+
+      .styled-select {
+        margin-right: 0;
+      }
+    }
+  }
+}

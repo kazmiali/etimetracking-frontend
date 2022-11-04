@@ -1,0 +1,41 @@
+.workspaces-act-dlt {
+  .active {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1rem 0 0;
+
+    p {
+      margin: 0 0 0 8px;
+      color: #8bc34a;
+      margin-right: 32px;
+    }
+
+    svg {
+      fill: #8bc34a;
+    }
+  }
+
+  .activate {
+    p {
+      color: #fff;
+      cursor: pointer;
+      margin-right: 0px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .workspaces-page {
+    .app-page-name-section {
+      .page-h1 {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+}
